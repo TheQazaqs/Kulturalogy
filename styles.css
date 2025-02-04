@@ -1,0 +1,108 @@
+/* Базовые стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Навигация */
+.navbar {
+    background-color: #1e3799;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Секции */
+.section {
+    padding: 100px 0;
+    min-height: 100vh;
+}
+
+#home {
+    background: linear-gradient(45deg, #87CEEB, #E0FFFF);
+    text-align: center;
+    padding-top: 200px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+}
+/* Увеличение размера текста */
+body {
+    font-size: 18px; /* Базовый размер текста */
+}
+
+h1 {
+    font-size: 36px; /* Заголовок главной страницы */
+}
+
+h2 {
+    font-size: 28px; /* Заголовки разделов */
+}
+
+p {
+    font-size: 20px; /* Основной текст */
+}
+
+button {
+    font-size: 18px; /* Кнопки в тесте */
+    padding: 10px 20px;
+    margin: 5px;
+}
+/* Стили для изображений */
+.infographic img {
+    width: 100%; /* Ширина изображения по размеру контейнера */
+    max-width: 600px; /* Максимальная ширина */
+    height: auto; /* Сохранение пропорций */
+    display: block; /* Убирает лишние отступы */
+    margin: 20px auto; /* Центрирование */
+    border-radius: 10px; /* Скругление углов */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень */
+}
+.infographic img {
+    width: 100%;
+    max-width: 600px;
+    height: 300px; /* Фиксированная высота */
+    object-fit: cover; /* Обрезка изображения */
+    border-radius: 10px;
+    margin: 20px auto;
+}
